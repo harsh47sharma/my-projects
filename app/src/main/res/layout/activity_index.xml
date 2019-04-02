@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".IndexActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:background="#551A8B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Select a Topic"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/Index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/textView" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8535542520913118/7241676299">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
