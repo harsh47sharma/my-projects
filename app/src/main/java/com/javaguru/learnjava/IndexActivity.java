@@ -109,7 +109,6 @@ public class IndexActivity extends AppCompatActivity {
                             mPreferences.edit().putInt("count", 0).commit();
                             //MyApplication.loadInterstitial(this);
                             RewardedAd.init(IndexActivity.this);
-                            Interstitial.loadInterstitial(IndexActivity.this);
                         }
                         return count;
 
